@@ -24,7 +24,7 @@ All code in this repository is written entirely by me — no AI-generated code, 
 ```
 c-programming-journey/
 │
-├── c_programming_journey.c     # Main file — 30 practices, basics to mini projects
+├── c_programming_journey.c     # Main file — 41 practices, basics to mini projects
 ├── c_functions.c               # Coming soon — Functions (parameters, return values)
 ├── c_arrays.c                  # Coming soon — Arrays
 ├── c_pointers.c                # Coming soon — Pointers
@@ -59,7 +59,7 @@ Basics → Conditions → Switch/Case → Strings → Loops → Mini Projects
 
 ## 📄 c_programming_journey.c
 
-The main file contains **30 practices** organised by topic, accessible via an interactive menu.
+The main file contains **41 practices** organised by topic, accessible via an interactive menu.
 
 ### Menu Structure
 
@@ -77,40 +77,51 @@ The main file contains **30 practices** organised by topic, accessible via an in
  4  - Price Calculator
  5  - Age Calculator
  6  - Height Converter (cm to metres)
+ 7  - Find the Larger of Two Numbers
+ 8  - Average of Three Numbers
+ 9  - Average (for loop)
+ 10 - Average (while loop — enter 0 to finish)
+ 11 - Fahrenheit <-> Celsius Converter
+ 12 - Weight Converter (kg <-> pounds)
+ 13 - Sphere Calculator
 
 --- CONDITIONS (if/else) ---
- 7  - Age Check
- 8  - Speed Check
- 9  - Ticket Price
- 10 - April Fools Day
- 11 - Age Comparison
- 12 - Positive / Negative / Odd / Even
+ 14 - Age Check
+ 15 - Speed Check
+ 16 - Ticket Price
+ 17 - April Fools Day
+ 18 - Age Comparison
+ 19 - Discount Calculator (bool, nested if)
+ 20 - Positive / Negative / Odd / Even
 
 --- SWITCH / CASE ---
- 13 - Traffic Light
- 14 - Restaurant Menu
- 15 - Grade System
- 16 - Calculator
- 17 - Day and Time (nested switch)
- 18 - Restaurant Sub-Menu (nested switch)
- 19 - Positive / Negative / Zero (switch)
+ 21 - Traffic Light
+ 22 - Restaurant Menu
+ 23 - Grade System
+ 24 - Calculator
+ 25 - Day and Time (nested switch)
+ 26 - Restaurant Sub-Menu (nested switch)
+ 27 - Positive / Negative / Zero (switch)
 
 --- STRINGS ---
- 20 - Login System
- 21 - Name Input (fgets)
- 22 - BMI Calculator
+ 28 - Login System
+ 29 - Name Input (fgets)
+ 30 - BMI Calculator
 
 --- LOOPS ---
- 23 - Sum of Numbers (while)
- 24 - Positive / Negative Sum
- 25 - Odd / Even Sum
- 26 - Maximum / Minimum
- 27 - Even Numbers (for)
- 28 - Sum 1 to 10 (for)
+ 31 - Sum of Numbers (while)
+ 32 - Positive / Negative Sum
+ 33 - Odd / Even Sum
+ 34 - Maximum / Minimum
+ 35 - Even Numbers (for)
+ 36 - Sum 1 to 10 (for)
 
 --- MINI PROJECTS ---
- 29 - Number Guessing Game
- 30 - Shopping Tracker
+ 37 - Compound Interest Calculator
+ 38 - Mad Libs Game
+ 39 - Shopping Cart
+ 40 - Number Guessing Game
+ 41 - Shopping Tracker
 
  0  - Exit
 ========================================
@@ -120,12 +131,12 @@ The main file contains **30 practices** organised by topic, accessible via an in
 
 | Topic | Practices | Concepts |
 |---|---|---|
-| Basics | 1 — 6 | Variables, printf, scanf, arithmetic, casting |
-| Conditions | 7 — 12 | if / else if / else, logical operators, nested if |
-| Switch/Case | 13 — 19 | switch, case, default, nested switch |
-| Strings | 20 — 22 | char[], strcmp, fgets, strcpy, buffer clearing |
-| Loops | 23 — 28 | while, for, counters, running totals |
-| Mini Projects | 29 — 30 | rand/srand, input validation, combined logic |
+| Basics | 1 — 13 | Variables, printf, scanf, arithmetic, casting, float, double, pow(), conversion formulas |
+| Conditions | 14 — 20 | if / else if / else, logical operators, nested if, bool |
+| Switch/Case | 21 — 27 | switch, case, default, nested switch |
+| Strings | 28 — 30 | char[], strcmp, fgets, strcpy, buffer clearing |
+| Loops | 31 — 36 | while, for, counters, running totals |
+| Mini Projects | 37 — 41 | math.h, rand/srand, input validation, combined logic |
 
 ---
 
@@ -135,7 +146,7 @@ The main file contains **30 practices** organised by topic, accessible via an in
 
 **Compile and run:**
 ```bash
-gcc c_programming_journey.c -o c_programming_journey
+gcc c_programming_journey.c -o c_programming_journey -lm
 ./c_programming_journey
 ```
 
@@ -164,7 +175,7 @@ Practice 01 — *Hello Deniz* — is a special one. The first printf was written
 
 | File | Status | Practices |
 |---|---|---|
-| c_programming_journey.c | ✅ Active | 30 |
+| c_programming_journey.c | ✅ Active | 41 |
 | c_functions.c | ⏳ Coming soon | — |
 | c_arrays.c | ⏳ Coming soon | — |
 | c_pointers.c | ⏳ Coming soon | — |

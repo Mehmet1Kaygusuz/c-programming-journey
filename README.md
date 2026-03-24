@@ -24,8 +24,7 @@ All code in this repository is written entirely by me — no AI-generated code, 
 ```
 c-programming-journey/
 │
-├── c_programming_journey.c     # Main file — 41 practices, basics to mini projects
-├── c_functions.c               # Coming soon — Functions (parameters, return values)
+├── c_programming_journey.c     # Main file — 61 practices, basics to mini projects
 ├── c_arrays.c                  # Coming soon — Arrays
 ├── c_pointers.c                # Coming soon — Pointers
 ├── c_structs.c                 # Coming soon — Structs
@@ -38,28 +37,27 @@ c-programming-journey/
 ## 🗺️ Learning Roadmap
 
 ```
-Basics → Conditions → Switch/Case → Strings → Loops → Mini Projects
-             ↓
-         Functions
-             ↓
-           Arrays
-             ↓
-     Strings (in depth)
-             ↓
-          Pointers
-             ↓
-           Structs
-             ↓
-          File I/O
-             ↓
-       Advanced Topics
+Basics → Conditions → Switch/Case → Strings → Loops → do-while → Patterns → Functions → Mini Projects
+                                                                                  ↓
+                                                                               Arrays
+                                                                                  ↓
+                                                                            Strings (in depth)
+                                                                                  ↓
+                                                                             Pointers
+                                                                                  ↓
+                                                                              Structs
+                                                                                  ↓
+                                                                             File I/O
+                                                                                  ↓
+                                                                          Advanced Topics
 ```
 
 ---
 
 ## 📄 c_programming_journey.c
 
-The main file contains **41 practices** organised by topic, accessible via an interactive menu.
+The main file contains **61 practices** organised into 9 sections, accessible via an interactive menu.  
+Each practice includes a `WHAT YOU LEARNED` block at the end — explaining every concept used.
 
 ### Menu Structure
 
@@ -70,7 +68,7 @@ The main file contains **41 practices** organised by topic, accessible via an in
      Solent University — 2025
 ========================================
 
---- BASICS ---
+--- SECTION 01: BASICS ---
  1  - Hello Deniz (first printf)
  2  - Square of a Number
  3  - Addition
@@ -79,64 +77,93 @@ The main file contains **41 practices** organised by topic, accessible via an in
  6  - Height Converter (cm to metres)
  7  - Find the Larger of Two Numbers
  8  - Average of Three Numbers
- 9  - Average (for loop)
- 10 - Average (while loop — enter 0 to finish)
- 11 - Fahrenheit <-> Celsius Converter
- 12 - Weight Converter (kg <-> pounds)
- 13 - Sphere Calculator
 
---- CONDITIONS (if/else) ---
- 14 - Age Check
- 15 - Speed Check
- 16 - Ticket Price
- 17 - April Fools Day
- 18 - Age Comparison
- 19 - Discount Calculator (bool, nested if)
- 20 - Positive / Negative / Odd / Even
+--- SECTION 02: CONDITIONS (if/else) ---
+ 9  - Age Check
+ 10 - Speed Check
+ 11 - Ticket Price
+ 12 - April Fools Day
+ 13 - Age Comparison
+ 14 - Discount Calculator (bool, nested if)
+ 15 - Positive / Negative / Odd / Even
 
---- SWITCH / CASE ---
- 21 - Traffic Light
- 22 - Restaurant Menu
- 23 - Grade System
- 24 - Calculator
- 25 - Day and Time (nested switch)
- 26 - Restaurant Sub-Menu (nested switch)
- 27 - Positive / Negative / Zero (switch)
+--- SECTION 03: SWITCH / CASE ---
+ 16 - Traffic Light
+ 17 - Restaurant Menu
+ 18 - Grade System
+ 19 - Calculator (int version)
+ 20 - Calculator v2 (double + divide-by-zero)
+ 21 - Day and Time (nested switch)
+ 22 - Restaurant Sub-Menu (nested switch)
+ 23 - Positive / Negative / Zero (switch)
 
---- STRINGS ---
- 28 - Login System
- 29 - Name Input (fgets)
- 30 - BMI Calculator
+--- SECTION 04: STRINGS ---
+ 24 - Login System
+ 25 - Name Input (fgets)
+ 26 - Temperature Converter (C <-> F)
+ 27 - Weight Converter (kg <-> pounds)
+ 28 - Sphere Calculator
 
---- LOOPS ---
- 31 - Sum of Numbers (while)
- 32 - Positive / Negative Sum
- 33 - Odd / Even Sum
- 34 - Maximum / Minimum
- 35 - Even Numbers (for)
- 36 - Sum 1 to 10 (for)
+--- SECTION 05: LOOPS (while & for) ---
+ 29 - Sum of Numbers (while)
+ 30 - Positive / Negative Sum
+ 31 - Odd / Even Sum
+ 32 - Maximum / Minimum
+ 33 - Average (for loop)
+ 34 - Average (while loop)
+ 35 - Even Numbers (for loop)
+ 36 - Sum 1 to 10 (for loop)
+ 37 - Times Table — Single Number (while)
+ 38 - Multiplication Table 12x12 (nested while)
+ 39 - Reverse a Number (for loop)
+ 40 - Reverse a Number (while loop)
+ 41 - Factorial (while loop)
+ 42 - Factorial (for loop)
 
---- MINI PROJECTS ---
- 37 - Compound Interest Calculator
- 38 - Mad Libs Game
- 39 - Shopping Cart
- 40 - Number Guessing Game
- 41 - Shopping Tracker
+--- SECTION 06: DO-WHILE LOOP ---
+ 43 - Ticket Price (do-while)
+ 44 - Number Guessing Game v2 (do-while + range)
 
- 0  - Exit
+--- SECTION 07: NESTED LOOPS & PATTERNS ---
+ 45 - Star Pattern — Descending
+ 46 - Star Pattern — Ascending
+ 47 - Diagonal Space Pattern
+ 48 - Number Triangle
+ 49 - Random Number Generator
+
+--- SECTION 08: FUNCTIONS ---
+ 50 - void Function — Basic
+ 51 - Function with Return Value
+ 52 - Function with Multiple Parameters (BMI)
+ 53 - Forward Declarations (Prototypes)
+
+--- SECTION 09: MINI PROJECTS ---
+ 54 - Compound Interest Calculator
+ 55 - Mad Libs Game
+ 56 - Shopping Cart
+ 57 - Number Guessing Game v1
+ 58 - Shopping Tracker
+ 59 - BMI Calculator (full version)
+ 60 - Rock Paper Scissors
+ 61 - Bank System
+
+  0 - Exit
 ========================================
 ```
 
 ### Topics Covered
 
-| Topic | Practices | Concepts |
+| Section | Practices | Concepts |
 |---|---|---|
-| Basics | 1 — 13 | Variables, printf, scanf, arithmetic, casting, float, double, pow(), conversion formulas |
-| Conditions | 14 — 20 | if / else if / else, logical operators, nested if, bool |
-| Switch/Case | 21 — 27 | switch, case, default, nested switch |
-| Strings | 28 — 30 | char[], strcmp, fgets, strcpy, buffer clearing |
-| Loops | 31 — 36 | while, for, counters, running totals |
-| Mini Projects | 37 — 41 | math.h, rand/srand, input validation, combined logic |
+| 01 Basics | 1 — 8 | Variables, printf, scanf, arithmetic, casting, int, float, double |
+| 02 Conditions | 9 — 15 | if / else if / else, logical operators &&, nested if, bool |
+| 03 Switch/Case | 16 — 23 | switch, case, default, break, fall-through, nested switch |
+| 04 Strings | 24 — 28 | char[], strcmp, fgets, strcpy, buffer clearing |
+| 05 Loops | 29 — 42 | while, for, break, continue, nested loops, running totals |
+| 06 do-while | 43 — 44 | do-while, guaranteed first run, menu loops |
+| 07 Patterns | 45 — 49 | nested loops, visual patterns, rand/srand |
+| 08 Functions | 50 — 53 | void, return values, parameters, forward declarations |
+| 09 Mini Projects | 54 — 61 | All concepts combined — real programs |
 
 ---
 
@@ -150,13 +177,13 @@ gcc c_programming_journey.c -o c_programming_journey -lm
 ./c_programming_journey
 ```
 
-**Select a practice from the menu and press Enter.**
+**Select a practice number from the menu and press Enter.**
 
 ---
 
 ## 📝 Personal Note
 
-Practice 01 — *Hello Deniz* — is a special one. The first printf was written by my daughter Deniz, age 9. Kept as a memory.
+Practice 01 — *Hello Deniz* — is a special one. The first line of code in this file was written by my daughter Deniz, age 9, on 21/02/2026 at 21:21. Kept as a memory.
 
 ---
 
@@ -175,8 +202,7 @@ Practice 01 — *Hello Deniz* — is a special one. The first printf was written
 
 | File | Status | Practices |
 |---|---|---|
-| c_programming_journey.c | ✅ Active | 41 |
-| c_functions.c | ⏳ Coming soon | — |
+| c_programming_journey.c | ✅ Active | 61 |
 | c_arrays.c | ⏳ Coming soon | — |
 | c_pointers.c | ⏳ Coming soon | — |
 | c_structs.c | ⏳ Coming soon | — |

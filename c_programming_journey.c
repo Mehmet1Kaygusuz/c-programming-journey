@@ -23,6 +23,7 @@
 #include <time.h>
 #include <math.h>
 #include <stdbool.h>
+#include <unistd.h>
 
 // ============================================================
 // SECTION 01 — BASICS: Variables & Arithmetic
@@ -2295,7 +2296,7 @@ int main() {
         case 59: practice59(); break;
         case 60: practice60(); break;
         case 61: practice61(); break;
-        case 62: practice61(); break;
+        case 62: practice62(); break;
         case 0:  printf("Exiting program...\n"); break;
         default: printf("Invalid choice\n");
     }

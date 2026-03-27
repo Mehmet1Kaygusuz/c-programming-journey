@@ -2089,6 +2089,7 @@ void practice61() {
 
     } while (choice != 4);
 }
+
 /*
  * ---- WHAT YOU LEARNED ----
  * Functions that return values used directly in expressions:
@@ -2100,6 +2101,50 @@ void practice61() {
  * This is the most complete project in the file — it uses: functions, do-while,
  *   switch, float, validation, and passing values between functions
  */
+
+// ============================================================
+// 62 — Digital Clock
+// Topic: time.h, struct tm, localtime(), fflush(), \r trick
+// Note : 27 March 2026 20:04 — first use of struct in this journey
+// ============================================================
+void practice62() {
+    time_t rawtime = 0;       // Stores time as seconds since Jan 1, 1970 (called Epoch)
+    struct tm *pTime = NULL;  // A struct that holds hours, minutes, seconds separately
+    int seconds = 0;
+
+    printf("DIGITAL CLOCK\n");
+    printf("How many seconds to run? ");
+    scanf("%d", &seconds);
+
+    for (int i = 0; i < seconds; i++) {
+        time(&rawtime);               // Get current time, store it in rawtime
+        pTime = localtime(&rawtime);  // Convert rawtime into hours/minutes/seconds
+        printf("\r%02d:%02d:%02d", pTime->tm_hour, pTime->tm_min, pTime->tm_sec);
+        fflush(stdout);               // Force the output to appear immediately
+        sleep(1);                     // Wait 1 second before the next update
+    }
+
+    printf("\nClock stopped.\n");
+}
+/*
+ * ---- WHAT YOU LEARNED ----
+ * time_t        — a data type that stores time as one big number (seconds since 1970)
+ * struct tm     — a structure that breaks time into parts: tm_hour, tm_min, tm_sec
+ * struct        — a way to group related variables under one name (you will learn this
+ *                 in depth later — this is your first encounter with it)
+ * pTime->tm_hour — the -> arrow is used to access a member of a struct pointer
+ * localtime()   — converts the raw seconds number into a readable struct tm
+ * \r            — carriage return: moves the cursor back to the START of the current line
+ *                 without moving down. This makes the clock update in place, not scroll.
+ * %02d          — prints an int with minimum 2 digits, padded with a zero if needed
+ *                 Example: 9 → "09",  14 → "14"
+ * fflush(stdout) — normally C waits before printing. fflush forces it to print NOW.
+ *                  Without this, the clock might not update visibly each second.
+ * sleep(1)      — pauses the program for 1 second (works on macOS and Linux)
+ * This practice introduced struct for the first time — a major concept you will
+ * revisit properly in the Structs section later in your journey.
+ */
+
 
 // ============================================================
 // MAIN MENU
@@ -2182,6 +2227,7 @@ int main() {
     printf(" 59 - BMI Calculator (full version)\n");
     printf(" 60 - Rock Paper Scissors\n");
     printf(" 61 - Bank System\n");
+    printf(" 62 - Digital Clock\n");
     printf("\n  0 - Exit\n");
     printf("========================================\n");
     printf("Your choice: ");
@@ -2249,6 +2295,7 @@ int main() {
         case 59: practice59(); break;
         case 60: practice60(); break;
         case 61: practice61(); break;
+        case 62: practice61(); break;
         case 0:  printf("Exiting program...\n"); break;
         default: printf("Invalid choice\n");
     }

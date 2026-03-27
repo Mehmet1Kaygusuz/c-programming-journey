@@ -24,7 +24,7 @@ All code in this repository is written entirely by me — no AI-generated code, 
 ```
 c-programming-journey/
 │
-├── c_programming_journey.c     # Main file — 61 practices, basics to mini projects
+├── c_programming_journey.c     # Main file — 62 practices, basics to mini projects
 ├── c_arrays.c                  # Coming soon — Arrays
 ├── c_pointers.c                # Coming soon — Pointers
 ├── c_structs.c                 # Coming soon — Structs

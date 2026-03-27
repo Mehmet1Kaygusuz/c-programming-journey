@@ -56,7 +56,7 @@ Basics → Conditions → Switch/Case → Strings → Loops → do-while → Pat
 
 ## 📄 c_programming_journey.c
 
-The main file contains **61 practices** organised into 9 sections, accessible via an interactive menu.  
+The main file contains **62 practices** organised into 9 sections, accessible via an interactive menu.  
 Each practice includes a `WHAT YOU LEARNED` block at the end — explaining every concept used.
 
 ### Menu Structure
@@ -65,7 +65,7 @@ Each practice includes a `WHAT YOU LEARNED` block at the end — explaining ever
 ========================================
      C PROGRAMMING JOURNEY
      Mehmet Kaygusuz
-     Solent University — 2025
+     Solent University — 2025/2026
 ========================================
 
 --- SECTION 01: BASICS ---
@@ -146,6 +146,7 @@ Each practice includes a `WHAT YOU LEARNED` block at the end — explaining ever
  59 - BMI Calculator (full version)
  60 - Rock Paper Scissors
  61 - Bank System
+ 62 - Digital Clock
 
   0 - Exit
 ========================================
@@ -163,7 +164,7 @@ Each practice includes a `WHAT YOU LEARNED` block at the end — explaining ever
 | 06 do-while | 43 — 44 | do-while, guaranteed first run, menu loops |
 | 07 Patterns | 45 — 49 | nested loops, visual patterns, rand/srand |
 | 08 Functions | 50 — 53 | void, return values, parameters, forward declarations |
-| 09 Mini Projects | 54 — 61 | All concepts combined — real programs |
+| 09 Mini Projects | 54 — 62 | All concepts combined — real programs |
 
 ---
 
@@ -202,7 +203,7 @@ Practice 01 — *Hello Deniz* — is a special one. The first line of code in th
 
 | File | Status | Practices |
 |---|---|---|
-| c_programming_journey.c | ✅ Active | 61 |
+| c_programming_journey.c | ✅ Active | 62 |
 | c_arrays.c | ⏳ Coming soon | — |
 | c_pointers.c | ⏳ Coming soon | — |
 | c_structs.c | ⏳ Coming soon | — |
@@ -227,7 +228,7 @@ Computer Science Foundation Student | Solent University
 |---|---|
 | Programme | Computer Science Foundation |
 | Institution | Solent University (Manchester Campus) |
-| Academic Year | 2025/26 |
+| Academic Year | 2025/2026 |
 
 ---
 
